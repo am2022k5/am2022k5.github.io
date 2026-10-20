@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عباس الموقع</title>
+<title>عباس V17 - Scanner</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
 <style>
-body{background:#0f0f0f;color:white;font-family:sans-serif;text-align:center;padding-top:100px}
-h1{font-size:50px;color:#00ff88}
-a{color:#00ff88;text-decoration:none;border:2px solid #00ff88;padding:10px 20px;border-radius:30px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#020602;color:#fff;font-family:'Cairo',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;position:relative;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:
+radial-gradient(circle at 20% 20%, rgba(0,255,100,0.08) 0%, transparent 50%),
+repeating-linear-gradient(90deg, rgba(0,255,100,0.03) 0 1px, transparent 1px 100px),
+repeating-linear-gradient(0deg, rgba(0,255,100,0.03) 0 1px, transparent 1px 100px);
+z-index:0}
+.content{position:relative;z-index:2;text-align:center;max-width:1000px;width:100%}
+h1{font-size:60px;color:#a6ff62;text-shadow:0 0 30px #00ff88;font-weight:900}
+.avatar-wrap{position:relative;width:220px;height:220px;margin:20px auto}
+.avatar-wrap::before{content:'';position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(#a6ff62,#00ff88,#a6ff62);animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.avatar{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid #000;box-shadow:0 0 50px #a6ff62}
+.subtitle{color:#a6ff62;font-family:'JetBrains Mono',monospace;margin:15px 0;font-size:18px}
+.location{color:#888}
+.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:35px 0}
+.card{border:1.5px solid #a6ff62;border-radius:18px;padding:20px;min-width:170px;background:rgba(0,0,0,0.6)}
+.card b{color:#a6ff62;font-size:40px;display:block;font-family:'JetBrains Mono',monospace}
+.card span{color:#aaa;font-size:12px}
+.btns{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{padding:16px 30px;border-radius:14px;text-decoration:none;font-weight:900;min-width:200px;transition:0.3s}
+.btn-tele{background:#a6ff62;color:#000;box-shadow:0 0 20px #a6ff62}
+.btn-git{border:2px solid #a6ff62;color:#a6ff62}
+.btn:hover{transform:scale(1.05)}
 </style>
 </head>
 <body>
-<h1>أهلاً انا عباس 🚀</h1>
-<p>موقعي صار شغال على GitHub Pages</p>
-<br><br>
-<a href="https://github.com/am2022k5">حسابي GitHub</a>
+<div class="content">
+<h1>عباس V17</h1>
+<div class="avatar-wrap">
+<img class="avatar" src="avatar.jpg" alt="عباس">
+</div>
+<div class="subtitle">WordPress Security Scanner // Al Kut</div>
+<div class="location">📍 Al Kut, Wasit - Iraq</div>
+<div class="cards">
+<div class="card"><b>V17</b><span>VERSION</span></div>
+<div class="card"><b>500+</b><span>SCANS COMPLETED</span></div>
+<div class="card"><b>100%</b><span>PYTHON<br>BUILT WITH</span></div>
+</div>
+<div class="btns">
+<a class="btn btn-tele" href="https://t.me/A_2023k" target="_blank">✈️ تليكرام @A_2023k</a>
+<a class="btn btn-git" href="https://github.com/am2022k5" target="_blank">GitHub</a>
+</div>
+<p style="margin-top:40px;color:#444;font-family:'JetBrains Mono',monospace;font-size:11px">am2022k5.github.io | 2026</p>
+</div>
 </body>
 </html>
